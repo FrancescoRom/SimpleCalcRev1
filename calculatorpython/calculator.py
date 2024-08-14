@@ -34,8 +34,8 @@ while True:
                 num1 = float(input("Enter first number: "))
                 num2 = float(input("Enter second number: "))
             except ValueError:
-                print("Invalid input")
-                break
+                print("Invalid input") # error if user enters anything else than a number
+                break # back to beginning
 
         if choice == "1":
             print(f"{num1} + {num2} = {add(num1, num2)}") # add
@@ -60,7 +60,7 @@ while True:
                 print("Okay, till next time!")
                 exit()
             else:
-                print("Invalid input, please enter 'y' or 'n'.")
+                print("Invalid input, please enter 'y' or 'n'.") # error if user enters anything else than y or n
             
 
     
